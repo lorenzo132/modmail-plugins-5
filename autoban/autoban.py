@@ -10,7 +10,7 @@ class autoban(commands.Cog):
         self.bot = bot
         
 
-    @god.command()
+    @commands.command()
     async def on_member_join(self, member):
         await member.ban(banlist)
         print(f"{member} was banned, fuck you fatal")
